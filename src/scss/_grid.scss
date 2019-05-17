@@ -1,0 +1,274 @@
+
+// flexbox grid
+
+@mixin col-1 {
+    -ms-flex: 0 0 8.333333%;
+    flex: 0 0 8.333333%;
+    max-width: 8.333333%;
+}
+@mixin col-2 {
+    -ms-flex: 0 0 16.666667%;
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+}
+@mixin col-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+@mixin col-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+@mixin col-5 {
+    -ms-flex: 0 0 41.666667%;
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+}
+@mixin col-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+@mixin col-7 {
+    -ms-flex: 0 0 58.333333%;
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+}
+@mixin col-8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+}
+@mixin col-9 {
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+@mixin col-10 {
+    -ms-flex: 0 0 83.333333%;
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+}
+@mixin col-11 {
+    -ms-flex: 0 0 91.666667%;
+    flex: 0 0 91.666667%;
+    max-width: 91.666667%;
+}
+@mixin col-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+[class*="col-"] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+
+
+.col-xs-1 {
+    @include col-1;
+}
+.col-xs-2 {
+    @include col-2;
+}
+.col-xs-3 {
+    @include col-3;
+}
+.col-xs-4 {
+    @include col-4;
+}
+.col-xs-5 {
+    @include col-5;
+}
+.col-xs-6 {
+    @include col-6;
+}
+.col-xs-7 {
+    @include col-7;
+}
+.col-xs-8 {
+    @include col-8;
+}
+.col-xs-9 {
+    @include col-9;
+}
+.col-xs-10 {
+    @include col-10;
+}
+.col-xs-11 {
+    @include col-11;
+}
+.col-xs-12 {
+    @include col-12;
+}
+
+@media (min-width: 576px) {
+    .col-sm-1 {
+        @include col-1;
+    }
+    .col-sm-2 {
+        @include col-2;
+    }
+    .col-sm-3 {
+        @include col-3;
+    }
+    .col-sm-4 {
+        @include col-4;
+    }
+    .col-sm-5 {
+        @include col-5;
+    }
+    .col-sm-6 {
+        @include col-6;
+    }
+    .col-sm-7 {
+        @include col-7;
+    }
+    .col-sm-8 {
+        @include col-8;
+    }
+    .col-sm-9 {
+        @include col-9;
+    }
+    .col-sm-10 {
+        @include col-10;
+    }
+    .col-sm-11 {
+        @include col-11;
+    }
+    .col-sm-12 {
+        @include col-12;
+    }
+}
+
+@media (min-width: 768px) {
+    .col-md-1 {
+        @include col-1;
+    }
+    .col-md-2 {
+        @include col-2;
+    }
+    .col-md-3 {
+        @include col-3;
+    }
+    .col-md-4 {
+        @include col-4;
+    }
+    .col-md-5 {
+        @include col-5;
+    }
+    .col-md-6 {
+        @include col-6;
+    }
+    .col-md-7 {
+        @include col-7;
+    }
+    .col-md-8 {
+        @include col-8;
+    }
+    .col-md-9 {
+        @include col-9;
+    }
+    .col-md-10 {
+        @include col-10;
+    }
+    .col-md-11 {
+        @include col-11;
+    }
+    .col-md-12 {
+        @include col-12;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-lg-1 {
+        @include col-1;
+    }
+    .col-lg-2 {
+        @include col-2;
+    }
+    .col-lg-3 {
+        @include col-3;
+    }
+    .col-lg-4 {
+        @include col-4;
+    }
+    .col-lg-5 {
+        @include col-5;
+    }
+    .col-lg-6 {
+        @include col-6;
+    }
+    .col-lg-7 {
+        @include col-7;
+    }
+    .col-lg-8 {
+        @include col-8;
+    }
+    .col-lg-9 {
+        @include col-9;
+    }
+    .col-lg-10 {
+        @include col-10;
+    }
+    .col-lg-11 {
+        @include col-11;
+    }
+    .col-lg-12 {
+        @include col-12;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-xl-1 {
+        @include col-1;
+    }
+    .col-xl-2 {
+        @include col-2;
+    }
+    .col-xl-3 {
+        @include col-3;
+    }
+    .col-xl-4 {
+        @include col-4;
+    }
+    .col-xl-5 {
+        @include col-5;
+    }
+    .col-xl-6 {
+        @include col-6;
+    }
+    .col-xl-7 {
+        @include col-7;
+    }
+    .col-xl-8 {
+        @include col-8;
+    }
+    .col-xl-9 {
+        @include col-9;
+    }
+    .col-xl-10 {
+        @include col-10;
+    }
+    .col-xl-11 {
+        @include col-11;
+    }
+    .col-xl-12 {
+        @include col-12;
+    }
+}
