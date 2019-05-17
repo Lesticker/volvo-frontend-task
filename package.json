@@ -1,0 +1,15 @@
+{
+  "name": "volvo-frontend-task",
+  "version": "1.0.0",
+  "description": "Volvo frontend task with sass preprocesor",
+  "main": "index.html",
+  "scripts": {
+    "gulp-sass": "gulp sass"
+  },
+  "author": "Dawid Kacprzyk",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2"
+  }
+}
