@@ -5,6 +5,7 @@
     -ms-flex: 0 0 8.333333%;
     flex: 0 0 8.333333%;
     max-width: 8.333333%;
+    
 }
 @mixin col-2 {
     -ms-flex: 0 0 16.666667%;
@@ -62,23 +63,26 @@
     max-width: 100%;
 }
 
-body {
-    margin: 0;
-}
-
 .wrapper {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+     div > div{
+        word-wrap: break-word; 
+        background-color: red;
+         width: 100%;
+     }
+
 }
+
 
 [class*="col-"] {
     width: 100%;
     box-sizing: border-box;
     padding: 0 10px;
     margin-bottom: 20px;
+    
 }
-
 
 .col-xs-1 {
     @include col-1;
